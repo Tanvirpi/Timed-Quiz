@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Timed Quiz</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="start-btn" class="start-btn btn">start</button>
+        <div id="question-container" class="hide">
+            <div id="question-element">question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button data-value="" id="btn-1">Answer 1</button>
+                <button data-value="" id="btn-2">Answer 2</button>
+                <button data-value="" id="btn-3">Answer 3</button>
+                <button data-value="" id="btn-4">Answer 4</button>
+            </div>
+            <div class="timer class">
+                <h6>Time Left : <span id="timer"></span></h6>
+                <h6 id="result">Result</h6>
+                <h6 id="score">Score</h6>
+            </div>
+        </div>
+        <div id="final-score" class="hide"> 
+            <h2 id="finalscore"></h2> 
+            <input id = "inputtag" type="text" placeholder="Enter User Name">
+            <button id="save-user">Save User Score</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

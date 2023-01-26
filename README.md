@@ -26,7 +26,7 @@ THEN I can save my initials and score
 ```
 
 ### Deployed Link
-[Live](https://tanvirpi.github.io/Password-Generator/)
+[Live](https://tanvirpi.github.io/Timed-Quiz/)
 
 ### Screenshot
 

@@ -30,7 +30,7 @@ THEN I can save my initials and score
 
 ### Screenshot
 
-![Image](https://github.com/Tanvirpi/Password-Generator/blob/main/screenshot.png)
+![Image](https://github.com/Tanvirpi/Timed-Quiz/screenshot.png)
 
 
 ### References

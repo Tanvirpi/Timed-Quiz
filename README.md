@@ -14,11 +14,11 @@ SO THAT I can gauge my progress compared to my peers
 ```
 GIVEN I am taking a code quiz
 WHEN I click the start button
-THEN a timer starts and I am presented with a question
+THEN a timer starts and I am presented with a question (Total 25 seconds for 5 questions)
 WHEN I answer a question
 THEN I am presented with another question
 WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
+THEN time is subtracted from the clock (5 seconds is subtracted from the Timer)
 WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over

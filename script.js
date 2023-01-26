@@ -6,7 +6,7 @@ const answerButtonElement = document.getElementById('answer-buttons')
 const timerEL = document.getElementById('timer')
 console.log(answerButtonElement)
 var timerObj;
-var timerCounter = 45;
+var timerCounter = 20;
 var scoreCount = 0;
 var btn1 = document.getElementById('btn-1')
 var btn2 = document.getElementById('btn-2')

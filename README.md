@@ -26,11 +26,11 @@ THEN I can save my initials and score
 ```
 
 ### Deployed Link
-[Live](https://tanvirpi.github.io/Password-Generator/)
+[Live](https://tanvirpi.github.io/Timed-Quiz/)
 
 ### Screenshot
 
-![Image](https://github.com/Tanvirpi/Password-Generator/blob/main/screenshot.png)
+![Image](https://github.com/Tanvirpi/Timed-Quiz/blob/main/Screenshot.png)
 
 
 ### References

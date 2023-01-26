@@ -53,43 +53,8 @@ function showQuestion (question) {
     btn3.setAttribute("data-value",question.answers[2].correct)
     btn4.innerText= question.answers[3].text
     btn4.setAttribute("data-value",question.answers[3].correct)
-    // question.answers.forEach(answer => {
-    //     const button = document.createElement('button')
-    //     button.innerText = answer.text
-    //     button.classList.add('btn')
-    //     if (answer.correct){
-    //         button.dataset.correct = answer.correct
-    //     }
-    //     button.addEventListener('click', selectAnswer)
-    //     answerButtonElement.appendChild(button)
-    //     questionContainer.classList.remove('hide')
-    // }
-
-    // )
-
 
 }
-
-// function resetState (){
-//     nextButton.classList.add('hide')
-//     while (answerButtonElement.firstChild){
-//         answerButtonElement.removeChild
-//         (answerButtonElement.firstChild)
-//     }
-
-// }
-
-
-// function selectAnswer(e) {
-//     const selectButton = e.target
-//     const correct = selectButton.dataset.correct
-//     setStatusClass(document.body, correct)
-//     Array.from(answerButtonElement.children).forEach(button => {
-//         setStatusClass(button, button.dataset.correct)
-//     }
-//         )
-
-// }
 
 function setStatusClass(){
     var buttonPress = this.getAttribute("data-value")
@@ -135,12 +100,33 @@ const questions = [
         ]
     },
     {
-        question: '5*2?',
+        question: 'Which planet has the most moons?',
         answers: [
-        { text: '6', correct:false},
-        { text: "10", correct:true},
-        { text: '7', correct:false},
-        { text: "8", correct:false},
+        { text: 'Mars', correct:false},
+        { text: "Neptune", correct:false},
+        { text: 'Earth', correct:false},
+        { text: "Saturn", correct:true},
+
+        ]
+    },
+
+    {
+        question: 'What country drinks the most coffee per capita?',
+        answers: [
+        { text: 'Finland', correct:true},
+        { text: "US", correct:false},
+        { text: 'Russia', correct:false},
+        { text: "China", correct:false},
+
+        ]
+    },
+    {
+        question: 'How many faces does a Dodecahedron have?',
+        answers: [
+        { text: '10', correct:false},
+        { text: "11", correct:false},
+        { text: '12', correct:true},
+        { text: "14", correct:false},
 
         ]
     }

@@ -4,6 +4,8 @@ const questionContainer = document.getElementById('question-container')
 const questionElement = document.getElementById('question-element')
 const answerButtonElement = document.getElementById('answer-buttons')
 const timerEL = document.getElementById('timer')
+const summaryEl = document.getElementById("summary")
+summaryEl.classList.add("hide")
 console.log(answerButtonElement)
 var timerObj;
 var timerCounter = 20;
@@ -143,6 +145,19 @@ function endQuizGame(){
 
 document.getElementById("save-user").addEventListener("click", function (){
         var user= document.getElementById("inputtag").value
-        localStorage.setItem("quiz", JSON.stringify({user:user,score:(scoreCount+timerCounter)}))
-
+        var savesScore = JSON.parse(localStorage.getItem("codequiz")) || []
+        savesScore.push({
+            user:user,
+            score:scoreCount+timerCounter
+        })
+        localStorage.setItem("quiz", JSON.stringify(savesScore))
+        var html =""
+        document.getElementById('final-score').classList.add("hide")
+        summaryEl.classList.remove("hide")
+        for(let i = 0;i<savesScore.length;i++){
+            html += `<h3>${savesScore[i].user} ---- <span>${savesScore[i].score}</span></h3> `
+        }
+        document.getElementById('list').innerHTML = html
+        timerCounter = 20;
+        scoreCount = 0
 })
